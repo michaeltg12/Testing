@@ -1,0 +1,21 @@
+Notes on cloning, commit and pull with Git Bash and command line
+
+Mike The Great@Robot1 MINGW64 ~/Git/firstClone
+$ git clone https://github.com/michaeltg12/Testing.git
+Cloning into 'Testing'...
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 20 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+
+Mike The Great@Robot1 MINGW64 ~/Git/firstClone
+$ ls
+Testing/
+
+Mike The Great@Robot1 MINGW64 ~/Git/firstClone
+$ cd Testing
+
+Mike The Great@Robot1 MINGW64 ~/Git/firstClone/Testing (master)
+$ ls
+'Intro to Github'  README.md  Server.java
+
