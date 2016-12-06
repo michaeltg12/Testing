@@ -1,7 +1,11 @@
 Notes on cloning, commit and pull with Git Bash and command line
 
+# navigate to the directory where you want to clone the repository
+# it will show up as a folder with the repository name
+
 Mike The Great@Robot1 MINGW64 ~/Git/firstClone
 $ git clone https://github.com/michaeltg12/Testing.git
+#           git hub web site / username / repository.git
 Cloning into 'Testing'...
 remote: Counting objects: 20, done.
 remote: Compressing objects: 100% (18/18), done.
