@@ -15,7 +15,7 @@ class Server {
 		ServerSocket welcomeSocket;
 		int port = 4242;
 		try {
-			welcomeSocket = new ServerSocket(port);
+			
 			System.out.println("Server started at port: " + port);
 			while (true) {
 				System.out.println("Waiting for connection...");
@@ -47,8 +47,8 @@ class Server {
                                                 while ((n=inFile.read(a))>0)
                                                   outToClient.write(a, 0, n);
                                                 
-                                            } catch(FileNotFoundException fnfe) {
-                                                outToClient.writeBytes("404: File Not Found. " 
+                                            } catch(FileNotFoundException fnaf) {
+                                                outToClient.writeBytes("515: File Not Found. " 
                                                         + file + " does not exist or has been moved.");
                                                 outToClient.writeBytes(" These are not the droids you are looking for...");
                                                 fnfe.printStackTrace();
