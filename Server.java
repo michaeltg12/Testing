@@ -1,3 +1,9 @@
+/**
+* This program written by Michael Giansiracusa
+* for COSC 345-001 taught by Dr. Farag
+* This program implements a simple web server
+* last edit 12/6/2016
+*/
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
@@ -11,9 +17,13 @@ import java.net.Socket;
 
 class Server {
 	public static void main(String argv[]) {
+		// create package access variables
 		String clientRequest;
 		ServerSocket welcomeSocket;
 		int port = 4242;
+		
+		// large try that encompases setting the server socket port 
+		// catches an IO Exception
 		try {
 			welcomeSocket = new ServerSocket(port);
 			System.out.println("Server started at port: " + port);
